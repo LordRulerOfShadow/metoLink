@@ -1,0 +1,126 @@
+body {
+  --twitter-color: #2046ef;
+  --twitter-background: #e7ecf0;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+/* AlumniFinder.css */
+
+.alumni-finder {
+  font-family: 'Roboto', sans-serif;  /* Improved font choice for better readability */
+  padding: 20px;
+  background-color: #f5f7fa;         /* Add a background color for the page */
+  max-width: 1200px;                 /* Limit the maximum width for better layout */
+  margin: 0 auto;                    /* Center the content */
+  line-height: 1.6;                  /* Improve readability with better line spacing */
+}
+
+#college-select {
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);  /* Light shadow for depth */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#college-select:hover, #college-select:focus {
+  border-color: #007bff;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.1);
+  outline: none;
+}
+
+.alumni-list {
+  margin-top: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;  /* Center the cards */
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;        /* Slightly larger rounding for a modern feel */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 280px;           /* Adjust max-width to make the cards fit better */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Add smooth shadow transition */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);  /* Add a deeper shadow on hover */
+}
+
+.card-content {
+  text-align: center;
+}
+
+.student-name {
+  font-size: 1.3em;           /* Slightly increase font size */
+  margin: 10px 0;
+  font-weight: 600;           /* Add font weight for emphasis */
+  color: #333;                /* Improve color contrast */
+}
+
+.student-degree,
+.student-year {
+  margin: 8px 0;
+  font-size: 1.1em;
+  color: #555;                /* Lighten the color for a subtle look */
+}
+
+.linkedin-button {
+  display: inline-block;
+  background: #0077b5;
+  color: #fff;
+  padding: 12px 20px;         /* Slightly bigger padding for better clickability */
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;             /* Increase font size slightly */
+  transition: background 0.3s ease, box-shadow 0.3s ease;  /* Add smooth transition for background and shadow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Add shadow for button */
+}
+
+.linkedin-button:hover {
+  background: #005582;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Add a stronger shadow on hover */
+}
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 2px solid #0077b5;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.logout-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s ease;
+}
